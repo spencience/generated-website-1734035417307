@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Subscribe to PurrfectPals newsletter for weekly cat care tips, adorable photos, and exclusive content about our feline friends.">
+    <meta name="keywords" content="cat newsletter, pet care tips, cat community, feline newsletter">
+    <title>PurrfectPals - Newsletter Subscription</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes pawPrint {
+            0% { transform: scale(1); opacity: 0.8; }
+            50% { transform: scale(1.1); opacity: 1; }
+            100% { transform: scale(1); opacity: 0.8; }
+        }
+        .paw-animation {
+            animation: pawPrint 2s infinite;
+        }
+        .newsletter-cat {
+            width: 60px;
+            height: 60px;
+            background: #fb923c;
+            border-radius: 50% 50% 0 0;
+            position: relative;
+            margin: 20px auto;
+        }
+        .newsletter-cat::before,
+        .newsletter-cat::after {
+            content: '';
+            position: absolute;
+            top: -15px;
+            width: 30px;
+            height: 30px;
+            background: #fb923c;
+            border-radius: 50%;
+        }
+        .newsletter-cat::before { left: -10px; }
+        .newsletter-cat::after { right: -10px; }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col bg-amber-50">
+    <header class="bg-orange-100 shadow-md">
+        <nav class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <a href="/generated-website-1734035417307/" class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-orange-400 rounded-full flex items-center justify-center paw-animation">
+                        <div class="text-white text-2xl">🐾</div>
+                    </div>
+                    <span class="text-2xl font-bold text-orange-600">PurrfectPals</span>
+                </a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="/generated-website-1734035417307/gallery.html" class="text-orange-600 hover:text-orange-800">Cat Gallery</a>
+                    <a href="/generated-website-1734035417307/breeds.html" class="text-orange-600 hover:text-orange-800">Breed Guide</a>
+                    <a href="/generated-website-1734035417307/care.html" class="text-orange-600 hover:text-orange-800">Care Tips</a>
+                    <a href="/generated-website-1734035417307/community.html" class="text-orange-600 hover:text-orange-800">Community</a>
+                </div>
+                <button class="md:hidden text-orange-600">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <div class="max-w-2xl mx-auto">
+            <h1 class="text-4xl font-bold text-orange-600 text-center mb-8">Join Our Pawsome Newsletter!</h1>
+            <div class="newsletter-cat"></div>
+            
+            <div class="bg-white rounded-lg shadow-lg p-8 mb-8">
+                <h2 class="text-2xl font-semibold text-orange-600 mb-4">What You'll Get:</h2>
+                <ul class="space-y-4 mb-6">
+                    <li class="flex items-center">
+                        <span class="text-orange-400 mr-2">🐱</span>
+                        Weekly cat care tips and advice
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-orange-400 mr-2">📸</span>
+                        Exclusive cat photos and stories
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-orange-400 mr-2">🎉</span>
+                        Special offers and event invitations
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-orange-400 mr-2">💝</span>
+                        Monthly featured adoption stories
+                    </li>
+                </ul>
+
+                <form method="GET" action="/generated-website-1734035417307/newsletter/subscribe" class="space-y-4">
+                    <div>
+                        <label for="email" class="block text-orange-600 mb-2">Email Address</label>
+                        <input type="email" id="email" name="email" required
+                            class="w-full px-4 py-2 border border-orange-200 rounded-lg focus:outline-none focus:border-orange-400"
+                            placeholder="Enter your email">
+                    </div>
+                    <div>
+                        <label for="name" class="block text-orange-600 mb-2">Your Name</label>
+                        <input type="text" id="name" name="name" required
+                            class="w-full px-4 py-2 border border-orange-200 rounded-lg focus:outline-none focus:border-orange-400"
+                            placeholder="Enter your name">
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="cat-parent" name="cat-parent" class="mr-2">
+                        <label for="cat-parent" class="text-orange-600">I'm a proud cat parent</label>
+                    </div>
+                    <button type="submit" 
+                        class="w-full bg-orange-500 text-white py-3 rounded-lg hover:bg-orange-600 transition duration-300">
+                        Subscribe Now
+                    </button>
+                </form>
+            </div>
+
+            <div class="text-center text-gray-600">
+                <p class="mb-4">Join over 50,000 cat lovers who receive our weekly updates!</p>
+                <p class="text-sm">We respect your privacy. Unsubscribe at any time.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-orange-100 mt-auto">
+        <div class="container mx-auto px-4 py-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div>
+                    <h3 class="font-bold text-orange-600 mb-2">About Us</h3>
+                    <a href="/generated-website-1734035417307/about.html" class="text-orange-600 hover:text-orange-800 block">Our Story</a>
+                    <a href="/generated-website-1734035417307/contact.html" class="text-orange-600 hover:text-orange-800 block">Contact</a>
+                </div>
+                <div>
+                    <h3 class="font-bold text-orange-600 mb-2">Resources</h3>
+                    <a href="/generated-website-1734035417307/blog.html" class="text-orange-600 hover:text-orange-800 block">Blog</a>
+                    <a href="/generated-website-1734035417307/newsletter.html" class="text-orange-600 hover:text-orange-800 block">Newsletter</a>
+                </div>
+                <div>
+                    <h3 class="font-bold text-orange-600 mb-2">Connect</h3>
+                    <a href="/generated-website-1734035417307/social/instagram.html" class="text-orange-600 hover:text-orange-800 block">Instagram</a>
+                    <a href="/generated-website-1734035417307/social/twitter.html" class="text-orange-600 hover:text-orange-800 block">Twitter</a>
+                </div>
+                <div>
+                    <h3 class="font-bold text-orange-600 mb-2">Legal</h3>
+                    <a href="/generated-website-1734035417307/privacy.html" class="text-orange-600 hover:text-orange-800 block">Privacy Policy</a>
+                    <a href="/generated-website-1734035417307/terms.html" class="text-orange-600 hover:text-orange-800 block">Terms of Use</a>
+                </div>
+            </div>
+            <div class="mt-6 text-center text-orange-600">
+                <p>&copy; 2024 PurrfectPals. All rights reserved. 🐱</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

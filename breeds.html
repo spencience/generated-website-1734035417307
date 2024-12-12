@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comprehensive guide to cat breeds - Learn about different cat breeds, their characteristics, personalities, and care requirements">
+    <meta name="keywords" content="cat breeds, persian cats, siamese cats, maine coon, bengal cats, cat guide, cat characteristics">
+    <title>Cat Breed Guide - PurrfectPals</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes pawPrint {
+            0% { transform: scale(1); opacity: 0.8; }
+            50% { transform: scale(1.1); opacity: 1; }
+            100% { transform: scale(1); opacity: 0.8; }
+        }
+        .paw-animation {
+            animation: pawPrint 2s infinite;
+        }
+        .breed-card:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col bg-amber-50">
+    <header class="bg-orange-100 shadow-md">
+        <nav class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <a href="/generated-website-1734035417307/" class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-orange-400 rounded-full flex items-center justify-center paw-animation">
+                        <div class="text-white text-2xl">🐾</div>
+                    </div>
+                    <span class="text-2xl font-bold text-orange-600">PurrfectPals</span>
+                </a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="/generated-website-1734035417307/gallery.html" class="text-orange-600 hover:text-orange-800">Cat Gallery</a>
+                    <a href="/generated-website-1734035417307/breeds.html" class="text-orange-600 hover:text-orange-800 font-bold">Breed Guide</a>
+                    <a href="/generated-website-1734035417307/care.html" class="text-orange-600 hover:text-orange-800">Care Tips</a>
+                    <a href="/generated-website-1734035417307/community.html" class="text-orange-600 hover:text-orange-800">Community</a>
+                </div>
+                <button class="md:hidden text-orange-600">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <h1 class="text-4xl font-bold text-orange-600 mb-8 text-center">Cat Breed Guide</h1>
+        
+        <div class="mb-8">
+            <div class="bg-white rounded-lg p-6 shadow-md">
+                <h2 class="text-2xl font-bold text-orange-600 mb-4">Find Your Perfect Feline Friend</h2>
+                <div class="flex flex-wrap gap-4 mb-6">
+                    <a href="/generated-website-1734035417307/breeds/size-filter?size=small.html" class="px-4 py-2 bg-orange-100 text-orange-600 rounded-full hover:bg-orange-200">Small Cats</a>
+                    <a href="/generated-website-1734035417307/breeds/size-filter?size=medium.html" class="px-4 py-2 bg-orange-100 text-orange-600 rounded-full hover:bg-orange-200">Medium Cats</a>
+                    <a href="/generated-website-1734035417307/breeds/size-filter?size=large.html" class="px-4 py-2 bg-orange-100 text-orange-600 rounded-full hover:bg-orange-200">Large Cats</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <article class="breed-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg">
+                <div class="h-48 bg-orange-200 flex items-center justify-center">
+                    <div class="text-6xl">😺</div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-orange-600 mb-2">Persian</h3>
+                    <p class="text-gray-600 mb-4">Gentle giants known for their luxurious long coat and sweet personality.</p>
+                    <a href="/generated-website-1734035417307/breeds/persian.html" class="text-orange-600 hover:text-orange-800 font-semibold">Learn More →</a>
+                </div>
+            </article>
+
+            <article class="breed-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg">
+                <div class="h-48 bg-orange-200 flex items-center justify-center">
+                    <div class="text-6xl">😸</div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-orange-600 mb-2">Siamese</h3>
+                    <p class="text-gray-600 mb-4">Vocal and intelligent cats with striking blue eyes and point coloration.</p>
+                    <a href="/generated-website-1734035417307/breeds/siamese.html" class="text-orange-600 hover:text-orange-800 font-semibold">Learn More →</a>
+                </div>
+            </article>
+
+            <article class="breed-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg">
+                <div class="h-48 bg-orange-200 flex items-center justify-center">
+                    <div class="text-6xl">😺</div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-orange-600 mb-2">Maine Coon</h3>
+                    <p class="text-gray-600 mb-4">Large, friendly cats known as the gentle giants of the cat world.</p>
+                    <a href="/generated-website-1734035417307/breeds/maine-coon.html" class="text-orange-600 hover:text-orange-800 font-semibold">Learn More →</a>
+                </div>
+            </article>
+        </div>
+
+        <div class="mt-8 bg-white rounded-lg p-6 shadow-md">
+            <h2 class="text-2xl font-bold text-orange-600 mb-4">Breed Comparison Tool</h2>
+            <form action="/generated-website-1734035417307/breeds/compare" method="GET" class="flex flex-wrap gap-4">
+                <select name="breed1" class="p-2 border rounded-md flex-1">
+                    <option value="">Select First Breed</option>
+                    <option value="persian">Persian</option>
+                    <option value="siamese">Siamese</option>
+                    <option value="maine-coon">Maine Coon</option>
+                </select>
+                <select name="breed2" class="p-2 border rounded-md flex-1">
+                    <option value="">Select Second Breed</option>
+                    <option value="persian">Persian</option>
+                    <option value="siamese">Siamese</option>
+                    <option value="maine-coon">Maine Coon</option>
+                </select>
+                <button type="submit" class="px-6 py-2 bg-orange-500 text-white rounded-md hover:bg-orange-600">Compare</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="bg-orange-100 mt-auto">
+        <div class="container mx-auto px-4 py-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div>
+                    <h3 class="font-bold text-orange-600 mb-2">About Us</h3>
+                    <a href="/generated-website-1734035417307/about.html" class="text-orange-600 hover:text-orange-800 block">Our Story</a>
+                    <a href="/generated-website-1734035417307/contact.html" class="text-orange-600 hover:text-orange-800 block">Contact</a>
+                </div>
+                <div>
+                    <h3 class="font-bold text-orange-600 mb-2">Resources</h3>
+                    <a href="/generated-website-1734035417307/blog.html" class="text-orange-600 hover:text-orange-800 block">Blog</a>
+                    <a href="/generated-website-1734035417307/newsletter.html" class="text-orange-600 hover:text-orange-800 block">Newsletter</a>
+                </div>
+                <div>
+                    <h3 class="font-bold text-orange-600 mb-2">Connect</h3>
+                    <a href="/generated-website-1734035417307/social/instagram.html" class="text-orange-600 hover:text-orange-800 block">Instagram</a>
+                    <a href="/generated-website-1734035417307/social/twitter.html" class="text-orange-600 hover:text-orange-800 block">Twitter</a>
+                </div>
+                <div>
+                    <h3 class="font-bold text-orange-600 mb-2">Legal</h3>
+                    <a href="/generated-website-1734035417307/privacy.html" class="text-orange-600 hover:text-orange-800 block">Privacy Policy</a>
+                    <a href="/generated-website-1734035417307/terms.html" class="text-orange-600 hover:text-orange-800 block">Terms of Use</a>
+                </div>
+            </div>
+            <div class="mt-6 text-center text-orange-600">
+                <p>&copy; 2024 PurrfectPals. All rights reserved. 🐱</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
